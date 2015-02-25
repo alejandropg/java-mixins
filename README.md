@@ -5,7 +5,7 @@ This is a very simple library to show how to implement _mixins_ in Java.
 
 The next code you can see how to use the library. You can find more examples in the test folder.
 
-```Java
+```java
 final Person originalPerson = new SimplePerson("John", "Doe");
 
 final Person person = new MixerBuilder(Person.class)
@@ -21,7 +21,7 @@ assertThat((MixtureInspector) person, hasOriginal(originalPerson));
 
 Also you can use the library without the need of casting:
 
-```Java
+```java
 final Person originalPerson = new SimplePerson("John", "Doe");
 
 final PoweredPerson poweredPerson = new MixerBuilder(PoweredPerson.class)
@@ -37,7 +37,7 @@ assertThat(poweredPerson, hasOriginal(originalPerson));
 
 Also you can cache the factory:
 
-```Java
+```java
 // Builds the Factory just one time
 final Mixer mixer = new MixerBuilder(PoweredPerson.class)
         .include(new Mixin(Entity.class, EntityDelegate.class))
