@@ -49,3 +49,8 @@ final PoweredPerson poweredPerson1 = mixer.mixWith(new SimplePerson("John", "Doe
 final PoweredPerson poweredPerson2 = mixer.mixWith(new SimplePerson("Jane", "Doe"));
 final PoweredPerson poweredPerson3 = mixer.mixWith(new SimplePerson("Joe", "Public"));
 ```
+
+## DOCS & TUTORIALS
+
+*   [Spanish tutorial in adictosaltrabajo.com](http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=java-mixins "Spanish tutorial in adictosaltrabajo.com")
+
